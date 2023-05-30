@@ -47,7 +47,7 @@ export default function Contact() {
               </p>
               <form
                 name="sophia-araya-contact"
-                action="/#/contact-success"
+                action="/contact-success"
                 method="POST"
                 className="space-y-4"
                 netlify
