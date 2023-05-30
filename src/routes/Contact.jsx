@@ -1,8 +1,11 @@
+import { useState } from "react";
 import SophiaContact from "../assets/images/sophia-araya-contact.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Contact() {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <>
       <Navbar />
@@ -12,9 +15,10 @@ export default function Contact() {
           <article className="w-full lg:w-1/2 flex justify-center mt-5">
             <img
               src={SophiaContact}
-              loading="lazy"
               alt="Sophia Araya Makeup Artist adjusting an artist's hair"
               className="w-11/12 lg:w-96 rounded-lg shadow-lg"
+              style={loaded ? {} : { display: "none" }}
+              onLoad={() => setLoaded(true)}
             />
           </article>
           <div className="px-5 lg:w-1/2 mt-5">
