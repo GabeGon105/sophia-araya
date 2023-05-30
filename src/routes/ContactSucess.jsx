@@ -24,7 +24,15 @@ export default function ContactSuccess() {
                 Contact
               </h2>
               <p className="mb-4 lg:mb-8 text-center sm:text-lg text-neutral">
-                <span>Email: sophiadaraya@gmail.com</span>
+                <span>
+                  Email:{" "}
+                  <a
+                    href="mailto:sophiadaraya@gmail.com"
+                    className="link link-neutral"
+                  >
+                    sophiadaraya@gmail.com
+                  </a>
+                </span>
                 <br />
                 <span>
                   IG:{" "}
