@@ -24,6 +24,20 @@
     <title>Sophia Araya</title>
   </head>
   <body>
+    <form name="sophia-araya-contact" action="/contact-success" method="POST" netlify netlify-honeypot="bot-field" hidden>
+      <div>
+        <input type="email" name="email" id="email"
+          placeholder="name@domain.com" required />
+      </div>
+      <div>
+        <input type="text" id="subject" name="subject"
+          placeholder="Let me know how I can help you" required />
+      </div>
+      <div className="sm:col-span-2">
+        <textarea id="message" name="message" rows="6"
+          placeholder="Leave a message..."></textarea>
+      </div>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

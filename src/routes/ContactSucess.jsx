@@ -2,7 +2,7 @@ import SophiaContact from "../assets/images/sophia-araya-contact.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export default function Contact() {
+export default function ContactSuccess() {
   return (
     <>
       <Navbar />
