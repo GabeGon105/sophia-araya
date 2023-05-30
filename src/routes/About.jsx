@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Sophia from "../assets/images/sophia-araya.jpg";
 import SophiaAbout1 from "../assets/images/sophia-araya-about-1.jpg";
 import SophiaAbout2 from "../assets/images/sophia-araya-about-2.jpeg";
@@ -6,10 +5,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function About() {
-  const [loaded1, setLoaded1] = useState(false);
-  const [loaded2, setLoaded2] = useState(false);
-  const [loaded3, setLoaded3] = useState(false);
-
   return (
     <>
       <Navbar />
@@ -18,10 +13,9 @@ export default function About() {
           <article className="w-full lg:w-1/2 flex justify-center mt-5">
             <img
               src={Sophia}
+              loading="lazy"
               alt="Sophia Araya Makeup Artist standing outside"
               className="w-11/12 lg:w-96 rounded-lg shadow-xl"
-              style={loaded1 ? {} : { display: "none" }}
-              onLoad={() => setLoaded1(true)}
             />
           </article>
           <div className="px-5 lg:w-1/2 mt-5">
@@ -75,17 +69,15 @@ export default function About() {
         <section className="flex flex-col justify-around items-center lg:flex-row pb-8">
           <img
             src={SophiaAbout1}
+            loading="lazy"
             alt="Sophia Araya Makeup Artist working with a colorful-haired client"
             className="w-11/12 lg:w-auto lg:h-64 rounded-lg shadow-xl mt-4"
-            style={loaded2 ? {} : { display: "none" }}
-            onLoad={() => setLoaded2(true)}
           />
           <img
             src={SophiaAbout2}
+            loading="lazy"
             alt="Sophia Araya Makeup Artist applying makeup and adjusting hair of client"
             className="w-11/12 lg:w-auto lg:h-64 rounded-lg shadow-xl mt-4"
-            style={loaded3 ? {} : { display: "none" }}
-            onLoad={() => setLoaded3(true)}
           />
         </section>
       </main>
