@@ -21,7 +21,7 @@ export default function Beauty() {
   ];
   return (
     <>
-      <Navbar />
+      <Navbar page="beauty" />
       <main className="container mx-auto flex-auto">
         <ImageCarousel
           key="beauty"

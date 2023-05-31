@@ -25,7 +25,7 @@ export default function Fashion() {
 
   return (
     <>
-      <Navbar />
+      <Navbar page="fashion" />
       <main className="container mx-auto flex-auto">
         <ImageCarousel
           key="fashion"

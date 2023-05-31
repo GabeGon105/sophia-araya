@@ -13,7 +13,7 @@ export default function MaleGrooming() {
   ];
   return (
     <>
-      <Navbar />
+      <Navbar page="male-grooming" />
       <main className="container mx-auto flex-auto">
         <ImageCarousel
           key="male-grooming"

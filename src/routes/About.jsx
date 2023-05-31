@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export default function About() {
   return (
     <>
-      <Navbar />
+      <Navbar page="about" />
       <main className="container mx-auto">
         <section className="flex flex-col items-start xl:items-center lg:flex-row-reverse pb-5 px-5 lg:px-0">
           <article className="w-full lg:w-1/2 flex justify-center mt-5">

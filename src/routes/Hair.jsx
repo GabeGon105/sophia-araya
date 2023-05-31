@@ -14,7 +14,7 @@ export default function Hair() {
   ];
   return (
     <>
-      <Navbar />
+      <Navbar page="hair" />
       <main className="container mx-auto flex-auto">
         <ImageCarousel
           key="hair"

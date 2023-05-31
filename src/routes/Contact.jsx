@@ -1,11 +1,26 @@
+import { useNavigate } from "react-router-dom";
 import SophiaContact from "../assets/images/sophia-araya-contact.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Contact() {
+  let navigate = useNavigate();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById("sophia-araya-contact");
+    let formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/contact-success"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <>
-      <Navbar />
+      <Navbar page="contact" />
       <main className="container mx-auto">
         <section className="flex flex-col items-center lg:flex-row pb-5 px-5">
           {/* Sophia Araya Photo */}
@@ -47,6 +62,7 @@ export default function Contact() {
               </p>
               <form
                 name="sophia-araya-contact"
+                id="sophia-araya-contact"
                 action="/contact-success"
                 method="POST"
                 className="space-y-4"
