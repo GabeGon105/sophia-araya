@@ -67,6 +67,7 @@ export default function Contact() {
                 method="POST"
                 className="space-y-4"
                 netlify
+                onSubmit={submitHandler}
               >
                 <input
                   type="hidden"
