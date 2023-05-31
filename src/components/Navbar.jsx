@@ -129,7 +129,9 @@ export default function Navbar({ page }) {
             <li>
               <Link
                 to="/beauty"
-                className="btn-ghost text-neutral font-semibold sm:text-lg"
+                className={`${
+                  page === "beauty" && "btn-active"
+                } btn-ghost text-neutral font-semibold sm:text-lg`}
               >
                 Beauty
               </Link>
@@ -137,7 +139,9 @@ export default function Navbar({ page }) {
             <li>
               <Link
                 to="/fashion"
-                className="btn-ghost text-neutral font-semibold sm:text-lg"
+                className={`${
+                  page === "fashion" && "btn-active"
+                } btn-ghost text-neutral font-semibold sm:text-lg`}
               >
                 Fashion
               </Link>
@@ -145,7 +149,9 @@ export default function Navbar({ page }) {
             <li>
               <Link
                 to="/hair"
-                className="btn-ghost text-neutral font-semibold sm:text-lg"
+                className={`${
+                  page === "hair" && "btn-active"
+                } btn-ghost text-neutral font-semibold sm:text-lg`}
               >
                 Hair
               </Link>
@@ -153,7 +159,9 @@ export default function Navbar({ page }) {
             <li>
               <Link
                 to="/male-grooming"
-                className="btn-ghost text-neutral font-semibold sm:text-lg"
+                className={`${
+                  page === "male-grooming" && "btn-active"
+                } btn-ghost text-neutral font-semibold sm:text-lg`}
               >
                 Male Grooming
               </Link>
@@ -164,7 +172,9 @@ export default function Navbar({ page }) {
             <li>
               <Link
                 to="/about"
-                className="btn-ghost text-neutral font-semibold sm:text-lg"
+                className={`${
+                  page === "about" && "btn-active"
+                } btn-ghost text-neutral font-semibold sm:text-lg`}
               >
                 About
               </Link>
@@ -172,7 +182,9 @@ export default function Navbar({ page }) {
             <li>
               <Link
                 to="/contact"
-                className="btn-ghost text-neutral font-semibold sm:text-lg"
+                className={`${
+                  page === "contact" && "btn-active"
+                } btn-ghost text-neutral font-semibold sm:text-lg`}
               >
                 Contact
               </Link>
