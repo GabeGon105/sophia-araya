@@ -43,7 +43,7 @@ export default function Fashion() {
           onIndexChange={handleIndexChange}
           className=""
         />
-        {index === 5 || (index === 6) | (index === 7) ? (
+        {index === 5 || index === 6 || index === 7 ? (
           <p className="py-2 text-center text-neutral sm:text-lg">
             VIN + OMI London Fashion Week 2023
           </p>

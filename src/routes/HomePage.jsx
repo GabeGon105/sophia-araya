@@ -32,7 +32,7 @@ export default function HomePage() {
       }}
     >
       <div style={overlayStyle}></div>
-      <div style={contentStyle} className="min-h-screen">
+      <div style={contentStyle} className="min-h-screen pt-2 pl-1">
         <Link to="/" className="btn btn-ghost normal-case text-neutral pb-2">
           <h2 className="flex flex-col text-2xl">
             Sophia Araya
@@ -41,10 +41,7 @@ export default function HomePage() {
         </Link>
         {/* Desktop Menu */}
         <div className="hidden lg:flex lg:place-content-center lg:container lg:mx-auto">
-          <ul
-            className="menu menu-vertical px-1 my-48 rounded-box shadow"
-            style={{ backgroundColor: "rgba(225, 225, 225, 0.4)" }}
-          >
+          <ul className="menu menu-vertical px-1 my-48">
             <li tabIndex={0}>
               <span className="btn-ghost text-neutral font-semibold sm:text-lg">
                 Portfolio
@@ -118,8 +115,7 @@ export default function HomePage() {
         <div className="flex lg:hidden place-content-center container mx-auto">
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content p-2 w-40 mt-28 rounded-box shadow"
-            style={{ backgroundColor: "rgba(225, 225, 225, 0.4)" }}
+            className="menu menu-compact dropdown-content p-2 w-40 mt-28"
           >
             <li className="menu-title">
               <span className="text-neutral font-semibold sm:text-lg">
