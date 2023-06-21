@@ -43,7 +43,7 @@ export default function HomePage() {
         <div className="hidden lg:flex lg:place-content-center lg:container lg:mx-auto">
           <ul className="menu menu-vertical px-1 my-48">
             <li tabIndex={0}>
-              <span className="btn-ghost text-neutral font-semibold sm:text-lg">
+              <span className="btn-ghost text-neutral font-semibold sm:text-xl">
                 Portfolio
                 <svg
                   className="fill-current"
@@ -55,14 +55,11 @@ export default function HomePage() {
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
               </span>
-              <ul
-                className="p-2 rounded-box shadow"
-                style={{ backgroundColor: "rgba(225, 225, 225, 0.4)" }}
-              >
+              <ul className="p-2">
                 <li>
                   <Link
                     to="/beauty"
-                    className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                    className={`btn-ghost text-neutral font-semibold sm:text-xl`}
                   >
                     Beauty
                   </Link>
@@ -70,7 +67,7 @@ export default function HomePage() {
                 <li>
                   <Link
                     to="/fashion"
-                    className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                    className={`btn-ghost text-neutral font-semibold sm:text-xl`}
                   >
                     Fashion
                   </Link>
@@ -78,7 +75,7 @@ export default function HomePage() {
                 <li>
                   <Link
                     to="/hair"
-                    className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                    className={`btn-ghost text-neutral font-semibold sm:text-xl`}
                   >
                     Hair
                   </Link>
@@ -86,7 +83,7 @@ export default function HomePage() {
                 <li>
                   <Link
                     to="/male-grooming"
-                    className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                    className={`btn-ghost text-neutral font-semibold sm:text-xl`}
                   >
                     Male Grooming
                   </Link>
@@ -96,7 +93,7 @@ export default function HomePage() {
             <li>
               <Link
                 to="/about"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold sm:text-xl`}
               >
                 About
               </Link>
@@ -104,7 +101,7 @@ export default function HomePage() {
             <li>
               <Link
                 to="/contact"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold sm:text-xl`}
               >
                 Contact
               </Link>
@@ -118,14 +115,12 @@ export default function HomePage() {
             className="menu menu-compact dropdown-content p-2 w-40 mt-28"
           >
             <li className="menu-title">
-              <span className="text-neutral font-semibold sm:text-lg">
-                Portfolio
-              </span>
+              <span className="text-neutral font-semibold">Portfolio</span>
             </li>
             <li>
               <Link
                 to="/beauty"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold`}
               >
                 Beauty
               </Link>
@@ -133,7 +128,7 @@ export default function HomePage() {
             <li>
               <Link
                 to="/fashion"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold`}
               >
                 Fashion
               </Link>
@@ -141,7 +136,7 @@ export default function HomePage() {
             <li>
               <Link
                 to="/hair"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold`}
               >
                 Hair
               </Link>
@@ -149,7 +144,7 @@ export default function HomePage() {
             <li>
               <Link
                 to="/male-grooming"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold`}
               >
                 Male Grooming
               </Link>
@@ -160,7 +155,7 @@ export default function HomePage() {
             <li>
               <Link
                 to="/about"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold`}
               >
                 About
               </Link>
@@ -168,7 +163,7 @@ export default function HomePage() {
             <li>
               <Link
                 to="/contact"
-                className={`btn-ghost text-neutral font-semibold sm:text-lg`}
+                className={`btn-ghost text-neutral font-semibold`}
               >
                 Contact
               </Link>
