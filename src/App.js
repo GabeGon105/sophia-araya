@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom"
+import HomePage from "./routes/HomePage"
 import Beauty from "./routes/Beauty"
 import Fashion from "./routes/Fashion"
 import Hair from "./routes/Hair"
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App min-h-screen flex flex-col">
       <Routes>
-        <Route path='/' element={ <Beauty/> } />
+        <Route path='/' element={ <HomePage/> } />
         <Route path='/beauty' element={ <Beauty/> } />
         <Route path='/fashion' element={ <Fashion/> } />
         <Route path='/hair' element={ <Hair/> } />

@@ -3,16 +3,19 @@ import { Link } from "react-router-dom";
 export default function Navbar({ page }) {
   return (
     <header className="navbar bg-base-100 sticky top-0 z-20">
-      <h2 className="navbar-start">
+      <div className="navbar-start">
         <Link
           to="/about"
-          className="btn btn-ghost normal-case text-2xl text-neutral text-neutral"
+          className="btn btn-ghost normal-case text-neutral pb-2"
         >
-          Sophia Araya
+          <h2 className="flex flex-col text-2xl">
+            Sophia Araya
+            <span className="text-xs">Makeup + Hair</span>
+          </h2>
         </Link>
-      </h2>
-      {/* Desktop menu */}
+      </div>
       <div className="navbar-end">
+        {/* Desktop menu */}
         <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li tabIndex={0}>
