@@ -1,9 +1,16 @@
+import { useState, useEffect } from "react";
 import images from "../assets/images";
 import ImageCarousel from "../components/ImageCarousel";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Beauty() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   const altText = [
     "Woman with dark curly hair in white dress",
     "Woman with dark curly hair in white dress, closeup",
@@ -22,7 +29,11 @@ export default function Beauty() {
   return (
     <>
       <Navbar page="beauty" />
-      <main className="container mx-auto flex-auto">
+      <main
+        className={`container mx-auto flex-auto transition-opacity duration-1000 ease-in ${
+          loaded ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <ImageCarousel
           key="beauty"
           altText={altText}

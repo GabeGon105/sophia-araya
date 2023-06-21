@@ -1,7 +1,14 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import HomePageBG from "../assets/images/homepage.jpg";
 
 export default function HomePage() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   const overlayStyle = {
     position: "absolute",
     top: 0,
@@ -17,15 +24,16 @@ export default function HomePage() {
   };
   return (
     <main
-      className="bg-cover bg-center w-full mx-auto flex-auto"
-      style={{ backgroundImage: `url(${HomePageBG})` }}
+      className={`bg-cover bg-center w-full mx-auto flex-auto transition-opacity duration-1000 ease-in delay-500 ${
+        loaded ? "opacity-100" : "opacity-0"
+      }`}
+      style={{
+        backgroundImage: `url(${HomePageBG})`,
+      }}
     >
       <div style={overlayStyle}></div>
       <div style={contentStyle} className="min-h-screen">
-        <Link
-          to="/about"
-          className="btn btn-ghost normal-case text-neutral pb-2"
-        >
+        <Link to="/" className="btn btn-ghost normal-case text-neutral pb-2">
           <h2 className="flex flex-col text-2xl">
             Sophia Araya
             <span className="text-xs">Makeup + Hair</span>
@@ -34,7 +42,7 @@ export default function HomePage() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex lg:place-content-center lg:container lg:mx-auto">
           <ul
-            className="menu menu-vertical px-1 my-40 rounded-box shadow"
+            className="menu menu-vertical px-1 my-48 rounded-box shadow"
             style={{ backgroundColor: "rgba(225, 225, 225, 0.4)" }}
           >
             <li tabIndex={0}>
@@ -110,7 +118,7 @@ export default function HomePage() {
         <div className="flex lg:hidden place-content-center container mx-auto">
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 w-40 mt-28 rounded-box shadow"
+            className="menu menu-compact dropdown-content p-2 w-40 mt-28 rounded-box shadow"
             style={{ backgroundColor: "rgba(225, 225, 225, 0.4)" }}
           >
             <li className="menu-title">

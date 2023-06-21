@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Sophia from "../assets/images/sophia-araya.jpg";
 import SophiaAbout1 from "../assets/images/sophia-araya-about-1.jpg";
 import SophiaAbout2 from "../assets/images/sophia-araya-about-2.jpeg";
@@ -5,10 +6,19 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function About() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   return (
     <>
       <Navbar page="about" />
-      <main className="container mx-auto">
+      <main
+        className={`container mx-auto transition-opacity duration-1000 ease-in ${
+          loaded ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <section className="flex flex-col items-start xl:items-center lg:flex-row-reverse pb-5 px-5 lg:px-0">
           <article className="w-full lg:w-1/2 flex justify-center mt-5">
             <img

@@ -1,12 +1,22 @@
+import { useState, useEffect } from "react";
 import SophiaContact from "../assets/images/sophia-araya-contact.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function ContactSuccess() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
   return (
     <>
       <Navbar />
-      <main className="container mx-auto">
+      <main
+        className={`container mx-auto transition-opacity duration-1000 ease-in ${
+          loaded ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <section className="flex flex-col items-center lg:flex-row pb-5 px-5">
           {/* Sophia Araya Photo */}
           <article className="w-full lg:w-1/2 flex justify-center mt-5">

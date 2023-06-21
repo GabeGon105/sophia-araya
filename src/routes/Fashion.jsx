@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import images from "../assets/images";
 import ImageCarousel from "../components/ImageCarousel";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function Fashion() {
+  const [loaded, setLoaded] = useState(false);
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
 
   // Track current swiper slide
   const handleIndexChange = (newIndex) => {
@@ -26,7 +31,11 @@ export default function Fashion() {
   return (
     <>
       <Navbar page="fashion" />
-      <main className="container mx-auto flex-auto">
+      <main
+        className={`container mx-auto flex-auto transition-opacity duration-1000 ease-in ${
+          loaded ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <ImageCarousel
           key="fashion"
           altText={altText}

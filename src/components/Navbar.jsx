@@ -4,10 +4,7 @@ export default function Navbar({ page }) {
   return (
     <header className="navbar bg-base-100 sticky top-0 z-20">
       <div className="navbar-start">
-        <Link
-          to="/about"
-          className="btn btn-ghost normal-case text-neutral pb-2"
-        >
+        <Link to="/" className="btn btn-ghost normal-case text-neutral pb-2">
           <h2 className="flex flex-col text-2xl">
             Sophia Araya
             <span className="text-xs">Makeup + Hair</span>
