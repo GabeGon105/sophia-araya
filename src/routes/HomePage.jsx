@@ -28,11 +28,11 @@ export default function HomePage() {
         </Link>
         {/* Menu */}
         <div className="flex flex-col place-items-center container mx-auto">
-          <ul className="menu menu-horizontal grid grid-cols-2 lg:flex place-items-center lg:place-items-end w-full justify-around">
+          <ul className="menu menu-horizontal grid grid-cols-2 lg:flex place-items-center lg:place-items-end w-full justify-around rounded-lg">
             <li className="lg:w-1/4 h-fit xl:w-72">
               <Link
                 to="/beauty"
-                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
+                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3 rounded-lg"
               >
                 <img
                   src={images.beauty[0]}
@@ -47,7 +47,7 @@ export default function HomePage() {
             <li className="lg:w-1/4 h-fit xl:w-72">
               <Link
                 to="/fashion"
-                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
+                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3 rounded-lg"
               >
                 <img
                   src={images.fashion[0]}
@@ -62,7 +62,7 @@ export default function HomePage() {
             <li className="lg:w-1/4 h-fit xl:w-72">
               <Link
                 to="/hair"
-                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
+                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3 rounded-lg"
               >
                 <img
                   src={images.hair[0]}
@@ -75,7 +75,7 @@ export default function HomePage() {
             <li className="lg:w-1/4 h-fit xl:w-72">
               <Link
                 to="/male-grooming"
-                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
+                className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3 rounded-lg"
               >
                 <img
                   src={images.mg[0]}
