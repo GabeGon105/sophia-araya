@@ -17,8 +17,8 @@ export default function Navbar() {
             </svg>
           </a>
         </div>
-        <p className="text-neutral">
-          Design by{" "}
+        <p className="text-neutral text-xs">
+          Web Design by{" "}
           <a
             className="link link-neutral"
             href="https://www.gabegon.com/"
