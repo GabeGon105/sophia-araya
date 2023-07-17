@@ -28,7 +28,7 @@ export default function HomePage() {
         </Link>
         {/* Menu */}
         <div className="flex flex-col place-items-center container mx-auto">
-          <ul className="menu menu-horizontal px-1 grid grid-cols-2 lg:flex place-items-center lg:place-items-end w-full">
+          <ul className="menu menu-horizontal px-1 grid grid-cols-2 lg:flex place-items-center lg:place-items-end w-full mx-auto">
             <li className="lg:w-1/4 h-fit max-w-xs">
               <Link
                 to="/beauty"
