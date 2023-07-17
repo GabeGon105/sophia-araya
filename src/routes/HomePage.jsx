@@ -29,7 +29,7 @@ export default function HomePage() {
         {/* Menu */}
         <div className="flex flex-col place-items-center container mx-auto">
           <ul className="menu menu-horizontal px-1 grid grid-cols-2 lg:flex place-items-center lg:place-items-end w-full">
-            <li className="lg:w-1/4 h-fit">
+            <li className="lg:w-1/4 h-fit max-w-xs">
               <Link
                 to="/beauty"
                 className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
@@ -44,7 +44,7 @@ export default function HomePage() {
                 </h2>
               </Link>
             </li>
-            <li className="lg:w-1/4 h-fit">
+            <li className="lg:w-1/4 h-fit max-w-xs">
               <Link
                 to="/fashion"
                 className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
@@ -59,7 +59,7 @@ export default function HomePage() {
                 </h2>
               </Link>
             </li>
-            <li className="lg:w-1/4 h-fit">
+            <li className="lg:w-1/4 h-fit max-w-xs">
               <Link
                 to="/hair"
                 className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
@@ -72,7 +72,7 @@ export default function HomePage() {
                 <h2 className="text-neutral font-semibold sm:text-2xl">Hair</h2>
               </Link>
             </li>
-            <li className="lg:w-1/4 h-fit">
+            <li className="lg:w-1/4 h-fit max-w-xs">
               <Link
                 to="/male-grooming"
                 className="btn btn-ghost normal-case w-full h-fit flex-col p-2 lg:p-3"
