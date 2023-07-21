@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <footer className="footer footer-center p-6 bg-base-100 text-base-content rounded">
+    <footer className="footer footer-center p-6 text-base-content rounded">
       <div>
         <div className="grid grid-flow-col gap-4">
           {/* Instagram Link */}

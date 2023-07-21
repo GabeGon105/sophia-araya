@@ -15,7 +15,7 @@ export default function About() {
     <>
       <Navbar page="about" />
       <main
-        className={`container mx-auto transition-opacity duration-1000 ease-in ${
+        className={`container mx-auto flex-auto transition-opacity duration-1000 ease-in ${
           loaded ? "opacity-100" : "opacity-0"
         }`}
       >
