@@ -56,7 +56,7 @@ export default function Navbar({ page }) {
                       page === "hair" && "btn-active"
                     } btn-ghost text-neutral font-semibold sm:text-lg`}
                   >
-                    Hair
+                    Hair + Wigs
                   </Link>
                 </li>
                 <li>
@@ -153,7 +153,7 @@ export default function Navbar({ page }) {
                   page === "hair" && "btn-active"
                 } btn-ghost text-neutral font-semibold sm:text-lg`}
               >
-                Hair
+                Hair + Wigs
               </Link>
             </li>
             <li>

@@ -75,7 +75,7 @@ export default function HomePage() {
                     className="rounded-lg"
                   />
                   <h2 className="text-neutral font-semibold sm:text-2xl">
-                    Hair
+                    Hair + Wigs
                   </h2>
                 </Link>
               </li>

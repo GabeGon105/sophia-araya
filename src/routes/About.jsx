@@ -62,6 +62,17 @@ export default function About() {
             </h3>
             <ul className="list-disc list-inside">
               <li className="text-neutral sm:text-lg">
+                Makeup Artist • Leeds KAO Salon Division Hair Show • Key MUA:
+                Michelle Strain
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Hair Stylist • Central Saint Martins 2023 BA Fashion Show
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • London KAO Salon Division Hair Show • Key MUA:
+                Michelle Strain
+              </li>
+              <li className="text-neutral sm:text-lg">
                 Makeup Artist • KAO Salon Division Hair Show • Key MUA: Michelle
                 Strain
               </li>

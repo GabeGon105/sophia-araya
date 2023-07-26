@@ -26,6 +26,13 @@ export default function Hair() {
     "Woman with dark hair tightly tied back",
     "Woman with white dress and pulled-back hair, side-view",
     "Woman with pink bow, closeup",
+    "Curly, brown-haired wig front-view",
+    "Curly, brown-haired wig side-view",
+    "Curly, brown-haired wig back-view",
+    "Brown hair with highlights in an elegant up-tie",
+    "Curly brown hair elegantly tied up",
+    "Man with facial postiche (sideburns and moustache) and retro glasses side-view",
+    "Man with facial postiche (sideburns and moustache) and retro glasses front-view",
   ];
   return (
     <>
@@ -45,6 +52,12 @@ export default function Hair() {
         {index === 0 || index === 1 ? (
           <p className="py-2 text-center text-neutral sm:text-lg">
             Central Saint Martins 2023 BA Show
+          </p>
+        ) : null}
+        {index === 13 || index === 14 ? (
+          <p className="py-2 text-center text-neutral sm:text-lg">
+            Facial postiche (sideburns and moustache) knotted and applied by
+            Sophia Araya
           </p>
         ) : null}
       </main>

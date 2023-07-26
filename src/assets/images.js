@@ -27,6 +27,13 @@ import hair5 from "./images/hair5.jpeg"
 import hair6 from "./images/hair6.jpg"
 import hair7 from "./images/hair7.jpeg"
 import hair8 from "./images/hair8.jpg"
+import hair9 from "./images/hair9.jpg"
+import hair10 from "./images/hair10.jpg"
+import hair11 from "./images/hair11.jpg"
+import hair12 from "./images/hair12.jpeg"
+import hair13 from "./images/hair13.jpeg"
+import hair14 from "./images/hair14.jpeg"
+import hair15 from "./images/hair15.jpeg"
 
 import mg1 from "./images/mg1.jpg"
 import mg2 from "./images/mg2.jpg"
@@ -39,6 +46,6 @@ import mg7 from "./images/mg7.jpg"
 export default {
     beauty: [beauty1,beauty2,beauty3,beauty4Hair3,beauty5,beauty6,beauty7,beauty8,beauty9,beauty10,beauty11,beauty12],
     fashion: [fashion1,fashion2,fashion3,fashion4,fashion5,fashion6,fashion7,fashion8],
-    hair: [hair1,hair2,beauty4Hair3,hair4,hair5,hair6,hair7,hair8],
+    hair: [hair1,hair2,beauty4Hair3,hair4,hair5,hair6,hair7,hair8,hair9,hair10,hair11,hair12,hair13,hair14,hair15],
     mg: [mg1,mg2,mg3,mg4,mg5,mg6,mg7]
 };
