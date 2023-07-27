@@ -73,10 +73,6 @@ export default function About() {
                 Michelle Strain
               </li>
               <li className="text-neutral sm:text-lg">
-                Makeup Artist • KAO Salon Division Hair Show • Key MUA: Michelle
-                Strain
-              </li>
-              <li className="text-neutral sm:text-lg">
                 Makeup Artist • VIN + OMI Spaced Fashion Show LFW • Key MUA:
                 Michelle Strain
               </li>
