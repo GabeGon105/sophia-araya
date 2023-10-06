@@ -18,6 +18,14 @@ export default function Fashion() {
   };
 
   const altText = [
+    "Life on Left Paris Fashion Week Show S/S ’24",
+    "Life on Left Paris Fashion Week Show S/S ’24",
+    "Laurence Xu Paris Fashion Week Show S/S ’24",
+    "Laurence Xu Paris Fashion Week Show S/S ’24",
+    "Malan Breton London Fashion Week Show S/S ’24",
+    "Malan Breton London Fashion Week Show S/S ’24",
+    "Backstage at Malan Breton London Fashion Week Show",
+    "Backstage at Malan Breton London Fashion Week Show",
     "Woman in dress and boots, upside-down",
     "Woman on knees, swinging hair upwards",
     "Woman holding a bag, black background",
@@ -27,6 +35,14 @@ export default function Fashion() {
     "Man with pink eye makeup and many colored hairclips",
     "Man with shiny coat slightly open revealing chest, colorful necklace, and gold-colored hat",
   ];
+
+  const captionText = {
+    vinOmi: "VIN + OMI London Fashion Week 2023",
+    lifeOnLeft: "Life on Left Paris Fashion Week Show S/S ’24",
+    laurenceXu: "Laurence Xu Paris Fashion Week Show S/S ’24",
+    malanBreton: "Malan Breton London Fashion Week Show S/S ’24",
+    backstagMalan: "Backstage at Malan Breton London Fashion Week Show",
+  };
 
   return (
     <>
@@ -43,11 +59,15 @@ export default function Fashion() {
           onIndexChange={handleIndexChange}
           className=""
         />
-        {index === 5 || index === 6 || index === 7 ? (
-          <p className="py-2 text-center text-neutral sm:text-lg">
-            VIN + OMI London Fashion Week 2023
-          </p>
-        ) : null}
+        <p className="py-2 text-center text-neutral sm:text-lg">
+          {index === 0 || index === 1 ? captionText.lifeOnLeft : null}
+          {index === 2 || index === 3 ? captionText.laurenceXu : null}
+          {index === 4 || index === 5 ? captionText.malanBreton : null}
+          {index === 6 || index === 7 ? captionText.backstagMalan : null}
+          {index === 13 || index === 14 || index === 15
+            ? captionText.vinOmi
+            : null}
+        </p>
       </main>
       <Footer />
     </>
