@@ -26,23 +26,13 @@ export default function Hair() {
     "Woman with dark hair tightly tied back",
     "Woman with white dress and pulled-back hair, side-view",
     "Woman with pink bow, closeup",
-    "Wavy, short-haired wig side-view",
-    "Wavy, short-haired wig front-view",
-    "Wavy, short-haired wig back-view",
-    "Curly, brown-haired wig front-view",
-    "Curly, brown-haired wig side-view",
-    "Curly, brown-haired wig back-view",
-    "Wavy, short-haired wig front-view",
-    "Wavy, short-haired wig frontside-view",
-    "Wavy, short-haired wig backside-view",
-    "Wavy, short-haired wig back-view",
-    "Bangs, short-haired wig front-view",
-    "Bangs, short-haired wig side-view",
-    "Bangs, short-haired wig side-view",
-    "Bangs, short-haired wig back-view",
-    "Wavy, short-haired wig front-view",
-    "Wavy, short-haired wig side-view",
-    "Wavy, short-haired wig back-view",
+    "Short, curly hair wig front-view",
+    "Curly hair wig front-view",
+    "Curly hair wig back-view",
+    "Wig hair styles from the 1920's",
+    "Wig hair styles from the 1930's",
+    "Wig hair styles from the 1940's",
+    "Wig hair styles from the 1950's/1960's",
     "Brown hair with highlights in an elegant up-tie",
     "Curly brown hair elegantly tied up",
     "Man with facial postiche (sideburns and moustache) and retro glasses side-view",
@@ -72,7 +62,7 @@ export default function Hair() {
         />
         <p className="py-2 text-center text-neutral sm:text-lg">
           {index === 0 || index === 1 ? captionText.saintMartins : null}
-          {index === 27 || index === 28 ? captionText.henryStache : null}
+          {index === 17 || index === 18 ? captionText.henryStache : null}
         </p>
       </main>
       <Footer />

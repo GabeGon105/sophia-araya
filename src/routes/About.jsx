@@ -20,6 +20,7 @@ export default function About() {
         }`}
       >
         <section className="flex flex-col items-start xl:items-center lg:flex-row-reverse pb-5 px-5 lg:px-0">
+          {/* Main image of Sophia */}
           <article className="w-full lg:w-1/2 flex justify-center mt-5">
             <img
               src={Sophia}
@@ -28,8 +29,10 @@ export default function About() {
               className="w-11/12 lg:w-96 rounded-lg shadow-xl"
             />
           </article>
+          {/* Bio and experience text */}
           <div className="px-5 lg:w-1/2 mt-5">
             <h1 className="text-2xl font-bold text-neutral">Hi!</h1>
+            {/* Sophia bio */}
             <p className="py-3 text-neutral sm:text-lg">
               My name is Sophia. I’m from the suburbs of Chicago and am
               currently living in London. I studied Fashion Merchandising at
@@ -41,8 +44,58 @@ export default function About() {
               artist. Some things I’m working on in my free time include
               braiding skills, men’s barbering, and period hairdressing.
             </p>
+            {/* Experience section */}
             <h2 className="text-xl font-bold py-3 text-neutral">Experience:</h2>
-            <h3 className="text-lg font-semibold text-neutral">Television:</h3>
+            {/* Fashion experience */}
+            <h3 className="text-lg font-semibold text-neutral">Fashion:</h3>
+            <ul className="list-disc list-inside">
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • Estetica Magazine Digital Cover for Emmanuel
+                Esteban
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • British Hairdressing Awards for Angelo Seminara
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist (Men's Grooming) • GQ México and Latinoamérica •
+                Men of the Year 2023
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • Life on Left S/S '24 Paris Fashion Week Show •
+                Key MUA: Marcello Costa
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • Laurence Xu S/S '24 Paris Fashion Week Show •
+                Key MUA: Marcello Costa
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • Malan Breton S/S '24 London Fashion Week Show •
+                Key MUA: Marcello Costa
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • Leeds KAO Salon Division Hair Show • Key MUA:
+                Michelle Strain
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Hair Stylist • Central Saint Martins 2023 BA Fashion Show
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • London KAO Salon Division Hair Show • Key MUA:
+                Michelle Strain
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Makeup Artist • VIN + OMI A/W '24 London Fashion Week Show • Key
+                MUA: Michelle Strain
+              </li>
+              <li className="text-neutral sm:text-lg">
+                Hair & Makeup Artist • Bellisa X Clothing Spring/Summer ’22
+                Campaign
+              </li>
+            </ul>
+            {/* Television experience */}
+            <h3 className="text-lg font-semibold pt-3 text-neutral">
+              Television:
+            </h3>
             <ul className="list-disc list-inside">
               <li className="text-neutral sm:text-lg">
                 The Crown • Left Bank Pictures • Crowd Hair & Makeup Artist
@@ -57,32 +110,19 @@ export default function About() {
                 Assistant
               </li>
             </ul>
+            {/* Theatre experience */}
             <h3 className="text-lg font-semibold pt-3 text-neutral">
-              Fashion:
+              Theatre:
             </h3>
             <ul className="list-disc list-inside">
               <li className="text-neutral sm:text-lg">
-                Makeup Artist • Leeds KAO Salon Division Hair Show • Key MUA:
-                Michelle Strain
-              </li>
-              <li className="text-neutral sm:text-lg">
-                Hair Stylist • Central Saint Martins 2023 BA Fashion Show
-              </li>
-              <li className="text-neutral sm:text-lg">
-                Makeup Artist • London KAO Salon Division Hair Show • Key MUA:
-                Michelle Strain
-              </li>
-              <li className="text-neutral sm:text-lg">
-                Makeup Artist • VIN + OMI Spaced Fashion Show LFW • Key MUA:
-                Michelle Strain
-              </li>
-              <li className="text-neutral sm:text-lg">
-                Hair & Makeup Artist • Bellisa X Clothing Spring/Summer ’22
-                Campaign
+                Work Experience (Wigs, Hair, & Makeup Department) • Mrs.
+                Doubtfire (West End)
               </li>
             </ul>
           </div>
         </section>
+        {/* Bottom two images */}
         <section className="flex flex-col justify-around items-center lg:flex-row pb-8">
           <img
             src={SophiaAbout1}
