@@ -19,7 +19,7 @@ export default function About() {
           loaded ? "opacity-100" : "opacity-0"
         }`}
       >
-        <section className="flex flex-col items-start xl:items-center lg:flex-row-reverse pb-5 px-5 lg:px-0">
+        <section className="flex flex-col items-start lg:flex-row-reverse pb-5 px-5 lg:px-0">
           {/* Main image of Sophia */}
           <article className="w-full lg:w-1/2 flex justify-center mt-5">
             <img
