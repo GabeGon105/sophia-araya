@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Sophia from "../assets/images/sophia-araya.jpg";
 import SophiaAbout1 from "../assets/images/sophia-araya-about-1.jpg";
 import SophiaAbout2 from "../assets/images/sophia-araya-about-2.jpeg";
+import SophiaAbout3 from "../assets/images/sophia-araya-about-3.jpeg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -21,12 +22,18 @@ export default function About() {
       >
         <section className="flex flex-col items-start lg:flex-row-reverse pb-5 px-5 lg:px-0">
           {/* Main image of Sophia */}
-          <article className="w-full lg:w-1/2 flex justify-center mt-5">
+          <article className="w-full lg:w-1/2 flex lg:flex-col justify-between items-center mt-5">
             <img
               src={Sophia}
               loading="lazy"
               alt="Sophia Araya Makeup Artist standing outside"
               className="w-11/12 lg:w-96 rounded-lg shadow-xl"
+            />
+            <img
+              src={SophiaAbout3}
+              loading="lazy"
+              alt="Estetica Hair magazine cover #2576"
+              className="hidden lg:block w-11/12 lg:w-96 rounded-lg shadow-xl mt-10 lg:mt-40 xl:mt-10"
             />
           </article>
           {/* Bio and experience text */}
@@ -124,6 +131,12 @@ export default function About() {
         </section>
         {/* Bottom two images */}
         <section className="flex flex-col justify-around items-center lg:flex-row pb-8">
+          <img
+            src={SophiaAbout3}
+            loading="lazy"
+            alt="Estetica Hair magazine cover #2576"
+            className="lg:hidden w-11/12 lg:w-auto lg:h-64 rounded-lg shadow-xl mt-4"
+          />
           <img
             src={SophiaAbout1}
             loading="lazy"

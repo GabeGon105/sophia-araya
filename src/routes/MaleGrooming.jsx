@@ -25,6 +25,8 @@ export default function MaleGrooming() {
     "Man in denim with short hair sitting on the floor for a photo shoot",
     "Man in denim with short hair, closeup",
     "Man in leather vest and a flat cap",
+    "Man in white shirt with embroidery",
+    "Man sitting on the floor next to a large tree",
   ];
 
   const captionText = {

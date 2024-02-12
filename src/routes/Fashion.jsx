@@ -26,13 +26,10 @@ export default function Fashion() {
     "Malan Breton London Fashion Week Show S/S ’24",
     "Backstage at Malan Breton London Fashion Week Show",
     "Backstage at Malan Breton London Fashion Week Show",
-    "Woman in dress and boots, upside-down",
-    "Woman on knees, swinging hair upwards",
     "Woman holding a bag, black background",
     "Woman in mesh-clothes with hair suspended upwards at a fashion show",
     "Woman in mesh-clothes with hair suspended upwards at a fashion show, different angle",
     "Woman with transparent face mask with a crimson seal on it",
-    "Man with pink eye makeup and many colored hairclips",
     "Man with shiny coat slightly open revealing chest, colorful necklace, and gold-colored hat",
   ];
 
@@ -64,7 +61,7 @@ export default function Fashion() {
           {index === 2 || index === 3 ? captionText.laurenceXu : null}
           {index === 4 || index === 5 ? captionText.malanBreton : null}
           {index === 6 || index === 7 ? captionText.backstagMalan : null}
-          {index === 13 || index === 14 || index === 15
+          {index === 11 || index === 12 || index === 13
             ? captionText.vinOmi
             : null}
         </p>
