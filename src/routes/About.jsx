@@ -53,8 +53,24 @@ export default function About() {
             </p>
             {/* Experience section */}
             <h2 className="text-xl font-bold py-3 text-neutral">Experience:</h2>
+            {/* E-commerce experience */}
+            <h3 className="text-lg font-semibold text-neutral">E-commerce:</h3>
+            <ul className="list-disc list-inside">
+              <li className="text-neutral sm:text-lg">
+              Hair & Makeup Artist • Jäegermeister Video Campaign
+              </li>
+              <li className="text-neutral sm:text-lg">
+              Hair & Makeup Artist • Samsung x UNiDAYS Campaign
+              </li>
+              <li className="text-neutral sm:text-lg">
+              Hair & Makeup Artist (Men’s Grooming) • Ronning London (menswear)
+              </li>
+              <li className="text-neutral sm:text-lg">
+              Hair & Makeup Artist • Cagteks Bridal Campaign
+              </li>
+            </ul>
             {/* Fashion experience */}
-            <h3 className="text-lg font-semibold text-neutral">Fashion:</h3>
+            <h3 className="text-lg font-semibold pt-3 text-neutral">Fashion:</h3>
             <ul className="list-disc list-inside">
               <li className="text-neutral sm:text-lg">
                 Makeup Artist • Estetica Magazine Digital Cover for Emmanuel
