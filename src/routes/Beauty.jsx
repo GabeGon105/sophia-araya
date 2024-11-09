@@ -27,6 +27,28 @@ export default function Beauty() {
     "Woman with head in palm",
     "Woman holding vase on top of her head",
     "Woman in red shirt",
+    "Woman with black and orange hair",
+    "Woman with yellow and blue hair",
+    "Woman with blonde, brown, and grey hair",
+    "Woman with red, blue, and brown hair",
+    "Woman with dark hair and blue eyeliner",
+    "Woman wearing white head/neck cloth",
+    "Woman wearing white head/neck cloth, closeup",
+    "Woman wearing blue shirt",
+    "Woman with dark curly hair in white dress",
+    "Woman with jumbo box braids, full photo",
+    "Woman with jumbo box braids smiling, closeup",
+    "Woman with red lipstick, closeup",
+    "Woman with red lipstick, side-view",
+    "Woman with curly hair, black hat",
+    "Woman with leopard print clothing",
+    "Woman with red top and black bottom",
+    "Woman with leopard print clothing and lolipop",
+    "Woman with red gloves, side-view",
+    "Woman with tightly-tied hair and blue makeup",
+    "Woman with colorful hair and makeup, closeup",
+    "Woman with colorful hair and makeup",
+    "Woman with pink bow, closeup"
   ];
   return (
     <>
