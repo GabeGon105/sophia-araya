@@ -18,6 +18,11 @@ export default function Hair() {
   };
 
   const altText = [
+    "Woman with long, curly hair",
+    "Woman holding vase on top of her head",
+    "Woman with long, curly hair, side view",
+    "Woman with long, curly hair and earing, close up",
+    "Woman with long, curly hair holding a vase",
     "Woman with red and white striped tubes in fashion show",
     "Woman with box clothing in fashion show",
     "Woman with jumbo box braids, crouched down",
@@ -61,8 +66,8 @@ export default function Hair() {
           className=""
         />
         <p className="py-2 text-center text-neutral sm:text-lg">
-          {index === 0 || index === 1 ? captionText.saintMartins : null}
-          {index === 17 || index === 18 ? captionText.henryStache : null}
+          {index === 5 || index === 6 ? captionText.saintMartins : null}
+          {index === 22 || index === 23 ? captionText.henryStache : null}
         </p>
       </main>
       <Footer />
